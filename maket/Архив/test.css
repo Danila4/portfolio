@@ -1,0 +1,18 @@
+.block {
+    border: 1px solid #000;
+    height: 200px;
+    margin: 0 15px 0 45px;
+}
+
+.my-class {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #ccc;
+    line-height: 32px;
+    text-align: center;
+}
+
+.my-class:hover {
+    color: red;
+}

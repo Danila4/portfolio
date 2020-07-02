@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Маркированные конверты</title>
+    <link rel="stylesheet" href="./fonts/roboto/roboto.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/main3.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(61447036, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <!-- /Yandex.Metrika counter -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/lists2.js"></script>
+</head>
+<body>
+    <noscript><div><img src="https://mc.yandex.ru/watch/61447036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+    <header class="container header">
+        <h1 class="header_logo">Продажа конвертов оптом и&nbsp;в&nbsp;розницу</h1>
+        <div class='header_phone_parent'>
+            <a href="tel:+74956851579" class="header_phone">+7 (495) 685-15-79</a>
+            <a href="tel:+79035928522" class="header_phone">+7 (903) 592-85-22</a>
+        </div>
+        <img src="./images/Vector.png" class="burger" alt="bur">
+        <img src="./images/Vector_close.png" class="burger_close" alt="bur">
+        <div class="burger_menu">
+            <!--        <a href="#" class="header_nav_btn">О&nbsp;компании</a>-->
+            <!-- <a href="https://postcardpress.ru/ru/" class="header_nav_btn">Полный&nbsp;каталог</a> -->
+            <a href="./index.html" class="header_nav_btn">Каталог</a>
+            <a href="https://postcardpress.ru/ru/content/1-delivery" class="header_nav_btn">Доставка&nbsp;и&nbsp;оплата</a>
+            <a href="./contacts.html" class="header_nav_btn">Контакты</a>
+            <!-- <a href="https://postcardpress.ru/ru/prices-drop" class="header_nav_btn">Скидки</a> -->
+            <a href="./cart.html" class="bucket_btn">Корзина</a>
+        </div>
+        <div class="header_nav">
+            <!--        <a href="#" class="header_nav_btn">О&nbsp;компании</a>-->
+            <!-- <a href="https://postcardpress.ru/ru/" class="header_nav_btn">Полный&nbsp;каталог</a> -->
+            <a href="./index.html" class="header_nav_btn">Каталог</a>
+            <a href="https://postcardpress.ru/ru/content/1-delivery" class="header_nav_btn">Доставка&nbsp;и&nbsp;оплата</a>
+            <a href="./contacts.html" class="header_nav_btn">Контакты</a>
+            <!-- <a href="https://postcardpress.ru/ru/prices-drop" class="header_nav_btn">Скидки</a> -->
+            <!--        <a href="#" class="header_nav_btn">Контакты</a>-->
+            <a href="./cart.html" class="bucket_btn">Корзина</a>
+        </div>
+    </header>
+<div class="alert_good">
+    <span>Товар добавлен!</span>
+</div>
+<div class="main_content">
+    <div class="container">
+        <h2 class="catalog_title"><a href="./index.html">Главная</a> / Маркированные конверты</h2>
+        <p style="font-size: 18px;">При заказе от 100 шт – скидка 5%,  от 500 – скидка 10%,  от 1000 – скидка 15%.</p>
+        <div class="filters">
+            <div class="form-group ">
+                <label for="sort">Сортировка:</label>
+                <select class="form-control sort_content" id="sort">
+                    <option value = 'none' selected>Без сортировки</option>
+                    <option value = 'priceUp' >Цена по убыванию</option>
+                    <option value = 'priceDown'>Цена по возрастанию</option>
+                </select>
+            </div>
+            <div class="form-group filter_par">
+                <label for="filter">Фильтр:</label>
+                <select class="form-control filter_content" id="filter">
+                    <option value = 'all' selected>Показать все конверты</option>
+                    <option value = 'E65'>Конверты E65</option>
+                    <option value = 'С65'>Конверты С65</option>
+                    <option value = 'A'>Конверты с литерой A</option>
+                    <option value = 'D'>Конверты с литерой D</option>
+                    <option value = 'C6'>Конверты C6</option>
+                    <option value = 'C5'>Конверты C5</option>
+                    <option value = 'C4'>Конверты C4</option>
+                    <option value = 'poscard'>Почтовые карточки</option>
+                    <option value = 'theme'>Тематические конверты</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="catalog_parent">
+
+        </div>
+    </div>
+
+    </div>
+</div>
+<footer>
+    <div class="container footer">
+        <div class="links_parent col-md-6">
+            <nav class="links">
+                <a href="./index.html" class="footer_nav_btn">Главная</a>
+                <!--                <a href="#" class="footer_nav_btn">О&nbsp;компании</a>-->
+                <a href="https://postcardpress.ru/ru/" class="footer_nav_btn">Полный&nbsp;каталог</a>
+                <a href="./index.html" class="footer_nav_btn">Каталог</a>
+                <!--                <a href="#" class="footer_nav_btn">Контакты</a>-->
+            </nav>
+            <div class="useful_links">
+                <a href="https://postcardpress.ru/ru/content/9-do" class="footer_nav_btn">Оферта</a>
+                <a href="https://postcardpress.ru/ru/content/12-privacy-policy" class="footer_nav_btn">Политика конфиденциальности</a>
+            </div>
+        </div>
+        <div class="footer_contacts col-md-6">
+            <a href="tel:+74956851579" class="foot_info">+7 (495) 685-15-79</a>
+            <a href="tel:+79035928522" class="foot_info">+7 (903) 592-85-22</a>
+            <span class="foot_info">Москва, м. Динамо, улица Писцовая, дом&nbsp;16,&nbsp;корпус&nbsp;2</span>
+        </div>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        draw_goods(items_mar);
+        $('.filter_content').change(function(e) {
+            if ($('.sort_content').val() === 'priceUp') {
+                draw_goods(
+                    items_mar.sort(function (a, b) {if (a.price < b.price) {return 1;}if (a.price > b.price) {return -1;}return 0;}),
+                    this.value
+                );
+            }
+            else if ($('.sort_content').val() === 'priceDown') {
+                draw_goods(
+                    items_mar.sort(function (a, b) {if (a.price > b.price) {return 1;}if (a.price < b.price) {return -1;}return 0;}),
+                    this.value
+                );
+            }
+            else{
+                draw_goods(
+                    items_mar,
+                    this.value
+                );
+            }
+        });
+        $('.sort_content').change(function(e) {
+            if (this.value === 'priceUp') {
+                draw_goods(
+                    items_mar.sort(function (a, b) {if (a.price < b.price) {return 1;}if (a.price > b.price) {return -1;}return 0;}),
+                    $('.filter_content').val()
+                );
+            }
+            else if (this.value === 'priceDown') {
+                draw_goods(
+                    items_mar.sort(function (a, b) {if (a.price > b.price) {return 1;}if (a.price < b.price) {return -1;}return 0;}),
+                    $('.filter_content').val()
+                );
+            }
+            else{
+                draw_goods(
+                    items_mar,
+                    $('.filter_content').val()
+                );
+            }
+            
+        });
+
+        document.querySelector('.burger').addEventListener('click', function(){
+            document.querySelector('.burger_menu').style.display = 'flex';
+            document.querySelector('.burger').style.display = 'none';
+            document.querySelector('.burger_close').style.display = 'block';
+        });
+        document.querySelector('.burger_close').addEventListener('click', function(){
+            document.querySelector('.burger_menu').style.display = 'none';
+            document.querySelector('.burger').style.display = 'block';
+            document.querySelector('.burger_close').style.display = 'none';
+        });
+        setTimeout(function(){
+            $('.price_calc_catalog_btn_add').click( function(event){
+                // console.log(event.target.dataset.id)
+                let itemId = event.target.dataset.id;
+                let numberOfItems = $('.price_calc_catalog_input_' + +itemId).val().length > 0 ? parseInt($('.price_calc_catalog_input_' + +itemId).val()) : 1;
+                let list = localStorage.getItem('bucket');
+                if(list){
+                    localStorage.removeItem('bucket');
+                    list = JSON.parse(list);
+                    if(list[event.target.dataset.id]) {
+                        list[event.target.dataset.id] = list[event.target.dataset.id] + numberOfItems;
+                    }else {
+                        list[event.target.dataset.id] = numberOfItems;
+                    }
+                    localStorage.setItem('bucket', JSON.stringify(list));
+                    // console.log(localStorage.getItem('bucket'));
+                }else{
+                    list = {};
+                    if(list[event.target.dataset.id]) {
+                        list[event.target.dataset.id] = list[event.target.dataset.id] + numberOfItems;
+                    }else {
+                        list[event.target.dataset.id] = numberOfItems;
+                    }
+                    localStorage.setItem('bucket', JSON.stringify(list));
+                    // console.log(localStorage.getItem('bucket'));
+                }
+                $('.alert_good').css('display','block');
+                setTimeout(function(){
+                    $('.alert_good').css('display','none');
+                },3000);
+            });
+
+            $('.price_calc_catalog_btn').click( function(event){
+                // console.log(event.target.dataset.id)
+                let itemId = event.target.dataset.id;
+                let numberOfItems = $('.price_calc_catalog_input_' +itemId).val().length > 0 ? parseInt($('.price_calc_catalog_input_'+itemId).val()) : 1;
+                let finalPrice = 0;
+                let item_data;
+                if (itemId < 100) {
+                    item_data = items_mar.find(function (el) {if (el.id == itemId  ){return true}});
+                } else if (itemId > 100 && itemId < 200) {
+                    item_data = items_cr.find(function (el) {if (el.id == itemId  ){return true}});
+                } else if (itemId > 200) {
+                    item_data = items_color.find(function (el) {if (el.id == itemId  ){return true}});
+                }
+
+                if (numberOfItems < 100) {
+                    finalPrice = numberOfItems * item_data.price;
+                } else if (numberOfItems >= 100 && numberOfItems < 500) {
+                    finalPrice = numberOfItems * (item_data.price - (item_data.price * 0.05).toFixed(2));
+                } else if (numberOfItems >= 500 && numberOfItems < 1000) {
+                    finalPrice = numberOfItems * (item_data.price - (item_data.price * 0.1).toFixed(2));
+                } else if (numberOfItems >= 1000) {
+                    finalPrice = numberOfItems * (item_data.price - (item_data.price * 0.15).toFixed(2));
+                }
+                $('.price_'+itemId).text(finalPrice.toFixed(2) + ' ₽');
+            });
+        },500);
+    });
+
+</script>
+</body>
+</html>

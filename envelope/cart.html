@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Маркированные конверты</title>
+    <link rel="stylesheet" href="./fonts/roboto/roboto.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/main3.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(61447036, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <!-- /Yandex.Metrika counter -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/lists2.js"></script>
+</head>
+<body>
+    <noscript><div><img src="https://mc.yandex.ru/watch/61447036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+    <header class="container header">
+        <h1 class="header_logo">Продажа конвертов оптом и&nbsp;в&nbsp;розницу</h1>
+        <div class='header_phone_parent'>
+            <a href="tel:+74956851579" class="header_phone">+7 (495) 685-15-79</a>
+            <a href="tel:+79035928522" class="header_phone">+7 (903) 592-85-22</a>
+        </div>
+        <img src="./images/Vector.png" class="burger" alt="bur">
+        <img src="./images/Vector_close.png" class="burger_close" alt="bur">
+        <div class="burger_menu">
+            <!--        <a href="#" class="header_nav_btn">О&nbsp;компании</a>-->
+            <!-- <a href="https://postcardpress.ru/ru/" class="header_nav_btn">Полный&nbsp;каталог</a> -->
+            <a href="./index.html" class="header_nav_btn">Каталог</a>
+            <a href="https://postcardpress.ru/ru/content/1-delivery" class="header_nav_btn">Доставка&nbsp;и&nbsp;оплата</a>
+            <a href="./contacts.html" class="header_nav_btn">Контакты</a>
+            <!-- <a href="https://postcardpress.ru/ru/prices-drop" class="header_nav_btn">Скидки</a> -->
+            <a href="./cart.html" class="bucket_btn">Корзина</a>
+        </div>
+        <div class="header_nav">
+            <!--        <a href="#" class="header_nav_btn">О&nbsp;компании</a>-->
+            <!-- <a href="https://postcardpress.ru/ru/" class="header_nav_btn">Полный&nbsp;каталог</a> -->
+            <a href="./index.html" class="header_nav_btn">Каталог</a>
+            <a href="https://postcardpress.ru/ru/content/1-delivery" class="header_nav_btn">Доставка&nbsp;и&nbsp;оплата</a>
+            <a href="./contacts.html" class="header_nav_btn">Контакты</a>
+            <!-- <a href="https://postcardpress.ru/ru/prices-drop" class="header_nav_btn">Скидки</a> -->
+            <!--        <a href="#" class="header_nav_btn">Контакты</a>-->
+            <a href="./cart.html" class="bucket_btn">Корзина</a>
+        </div>
+    </header>
+<div class="alert_good letter">
+    <span>Письмо было успешно отправлено!</span>
+</div>
+<div class="alert_good yand_letter">
+    <span>Письмо было успешно отправлено! Сейчас вас переведут на страницу оплаты.</span>
+</div>
+<div class="alert_bad">
+    <span class="bad_text"></span>
+</div>
+<div class="main_content">
+    <div class="container">
+        <h2 class="cart_title"><a href="./index.html">Главная</a> / Корзина</h2>
+        <div class="step">
+            <div class="number_step ">1</div>
+            <div class="goods_parent col-md-11">
+                <h3 class="goods_h">Ваш заказ</h3>
+                <div class="goods goods_no_items">
+                    <div class="item no_items">
+                        <span class="item_name">У вас нет никаких лотов в Корзине</span>
+                    </div>
+
+                </div>
+                <div class="goods goods_items">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="number_step ">2</div>
+            <div class="goods_parent col-md-11">
+                <h3 class="goods_h">Ваш контакты</h3>
+                <div class="goods">
+                    <div class="item_inputs">
+                        <input type="text" placeholder="Ваше имя" class="form_name item_form required">
+                        <input type="text" placeholder="Ваш телефон" class="form_tel item_form required">
+                        <input type="text" placeholder="Ваш email" class="form_email item_form required">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="number_step ">3</div>
+            <div class="goods_parent col-md-11">
+                <h3 class="goods_h">Способ доставки</h3>
+                <div class="goods">
+                    <div class="item_radios">
+                        <div class="form-check form-check-inline courier radio_el ship_div" data-id="courier">
+                            <input class="form-check-input" data-id="courier" type="radio" name="delivery" id="inlineRadio1" value="option1" checked>
+                            <label class="form-check-label" data-id="courier" for="inlineRadio1">Курьером
+                                <br> <small data-id="courier">+ 300 ₽ Время доставки: 1-2 дня</small>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline trans_comp radio_el ship_div" data-id="trans_comp">
+                            <input class="form-check-input" data-id="trans_comp" type="radio" name="delivery" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" data-id="trans_comp" for="inlineRadio2">Транспортной компанией
+                                <br><small data-id="trans_comp">+ 0 ₽ Время доставки: 1 неделя</small>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline self_take radio_el ship_div" data-id="self_take">
+                            <input class="form-check-input" data-id="self_take" type="radio" name="delivery" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" data-id="self_take" for="inlineRadio3">Самовывоз
+                                <br><small data-id="self_take">+ 0 ₽ Время доставки: 1-2 дня</small>
+                            </label>
+                        </div>
+                    </div>
+                    <span class="item_name_info">Адрес точки самовывоза: г. Москва, улица Писцовая, дом 16, корпус 2 (вход с стороны корпуса 1 в цокольный этаж, вторая дверь по каридору справо). Телефон/Whatsapp 8(903)592-85-22</span>
+                    <span class="item_name_info">Время работы: в будни с 9:00 до 21:00, в субботу c 10:00 до 18:00, воскресенье - выходной.</span>
+                    <div class="item_inputs">
+                        <input type="text" placeholder="Ваше адрес" class="form_addr item_form required">
+                        <input type="text" placeholder="Ваш комментарий" class="form_comment item_form required">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="step">
+            <div class="number_step ">4</div>
+            <div class="goods_parent col-md-11">
+                <h3 class="goods_h">Способ оплаты</h3>
+                <div class="goods">
+                    <div class="item_radios">
+                        <div class="form-check form-check-inline entity radio_el payment_div" data-id="entity">
+                            <input class="form-check-input payment_meth" data-id="entity" type="radio" name="payment" id="inlineRadio5" value="option5" checked>
+                            <label class="form-check-label" data-id="entity" for="inlineRadio5">На р/с юридического лица</label><br>
+<!--                            <small>На указанную выше почту мы отправим Счет на оплату</small>-->
+                        </div>
+                        <div class="form-check form-check-inline card_to_card radio_el payment_div" data-id="card_to_card">
+                            <input class="form-check-input payment_meth" data-id="card_to_card" type="radio" name="payment" id="inlineRadio6" value="option6">
+                            <label class="form-check-label" data-id="card_to_card" for="inlineRadio6">Перевод с карты на карту</label><br>
+<!--                            <small>На указанную выше почту мы отправим реквизиты карты для перевода</small>-->
+                        </div>
+                        <div class="form-check form-check-inline ya_kassa radio_el payment_div" data-id="ya_kassa">
+                            <input class="form-check-input payment_meth" data-id="ya_kassa" type="radio" name="payment" id="inlineRadio7" value="option7">
+                            <label class="form-check-label" data-id="ya_kassa" for="inlineRadio7">Через Яндекс Кассу</label><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container confirm_parent">
+        <div class="confirm_block_items col-md-9">
+            <h3 class="goods_h">Подтверждение заказ</h3>
+            <div class="goods goods_no_items">
+                <div class="item no_items">
+                    <span class="item_name">У вас нет никаких лотов в Корзине</span>
+                </div>
+                <div class="goods goods_items_final">
+                </div>
+            </div>
+            <div class="goods goods_items">
+
+
+            </div>
+            <div class="confirm_block_parent">
+                <p class="confirm_name"><b>Ваше имя...</b></p>
+                <p class="confirm_email"><b>Ваш email...</b></p>
+                <p class="confirm_phone"><b>Ваш телефон...</b></p>
+            </div>
+            <div class="confirm_block_parent">
+                <p ><b>Ваш адрес доставки:</b> <span class="confirm_addr">...</span></p>
+            </div>
+            <div class="confirm_block_parent" style="display: none">
+                <p ><b>Ваш тип доставки:</b> <span class="confirm_ship_type" data-price="300">Курьером</span></p>
+            </div>
+            <div class="confirm_block_parent" style="display: none">
+                <p ><b>Ваш комментарий:</b> <span class="confirm_comment">...</span></p>
+            </div>
+            <div class="confirm_block_parent">
+                <p ><b>Ваш способ оплаты:</b><span class="confirm_payment">На р/с юридического лица</span></p>
+            </div>
+        </div>
+        <div class="confirm_block_items col-md-2 confirm_price">
+            <h3 class="price_h">Итого к оплате</h3>
+            <p><span class="confirm_price_span"></span> ₽</p>
+            <button class="send_btn_cart">Отправить заказ</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container footer">
+        <div class="links_parent col-md-6">
+            <nav class="links">
+                <a href="./index.html" class="footer_nav_btn">Главная</a>
+                <!--                <a href="#" class="footer_nav_btn">О&nbsp;компании</a>-->
+                <a href="https://postcardpress.ru/ru/" class="footer_nav_btn">Полный&nbsp;каталог</a>
+                <a href="./index.html" class="footer_nav_btn">Каталог</a>
+                <!--                <a href="#" class="footer_nav_btn">Контакты</a>-->
+            </nav>
+            <div class="useful_links">
+                <a href="https://postcardpress.ru/ru/content/9-do" class="footer_nav_btn">Оферта</a>
+                <a href="https://postcardpress.ru/ru/content/12-privacy-policy" class="footer_nav_btn">Политика конфиденциальности</a>
+            </div>
+        </div>
+        <div class="footer_contacts col-md-6">
+            <a href="tel:+74956851579" class="foot_info">+7 (495) 685-15-79</a>
+            <a href="tel:+79035928522" class="foot_info">+7 (903) 592-85-22</a>
+            <span class="foot_info">Москва, м. Динамо, улица Писцовая, дом&nbsp;16,&nbsp;корпус&nbsp;2</span>
+        </div>
+    </div>
+</footer>
+<script>
+    let already_sent = false;
+    function calculatePrice (element) {
+        let totalPrice = 0;
+        for (let item in element) {
+            let item_data;
+            if (item < 100) {
+                item_data = items_mar.find(function (el) {if (el.id == item  ){return true}});
+            } else if (item > 100 && item < 200) {
+                item_data = items_cr.find(function (el) {if (el.id == item  ){return true}});
+            } else if (item > 200) {
+                item_data = items_color.find(function (el) {if (el.id == item  ){return true}});
+            }
+            if (element[item] < 100) {
+                totalPrice += element[item] * item_data.price;
+            } else if (element[item] >= 100 && element[item] < 500) {
+                totalPrice += element[item] * (item_data.price - (item_data.price * 0.05).toFixed(2));
+            } else if (element[item] >= 500 && element[item] < 1000) {
+                totalPrice += element[item] * (item_data.price - (item_data.price * 0.1).toFixed(2));
+            } else if (element[item] >= 1000) {
+                totalPrice += element[item] * (item_data.price - (item_data.price * 0.15).toFixed(2));
+            }
+        }
+        if (totalPrice <= 1000 ) {
+            if ($('#inlineRadio2')[0].checked) {
+                $('#inlineRadio1').trigger('click');
+            }
+            $('.form-check.form-check-inline.trans_comp.radio_el.ship_div').css('display', 'none');
+        } else {
+            $('.form-check.form-check-inline.trans_comp.radio_el.ship_div').css('display', 'flex');
+        }
+        totalPrice += parseInt($('.confirm_ship_type')[0].dataset['price']);
+        $('.confirm_price_span').text(totalPrice.toFixed(2));
+
+    }
+    function clearValues() {
+        $('.confirm_ship_type').text('Курьером');
+        $('.confirm_ship_type')[0].dataset['price'] = 300;
+        $('.confirm_price_span').text('');
+
+        $('.confirm_name').text('Ваше имя...');
+        $('.form_name').val('');
+
+        $('.confirm_email').text('Ваш email...');
+        $('.form_email').val('');
+
+        $('.form_tel').val('');
+        $('.confirm_phone').text('Ваш телефон...');
+
+        $('.confirm_addr').text('...');
+        $('.form_addr').val('');
+
+        $('.confirm_comment').text('...');
+        $('.form_comment').val('');
+
+        localStorage.removeItem('bucket');
+
+        $('#inlineRadio5').trigger('click');
+        $('#inlineRadio1').trigger('click');
+        $('.goods_items_final').empty();
+        $('.goods_items').empty();
+        $('.no_items').css('display', 'flex');
+        $('.confirm_price').css('display', 'none');
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+        document.querySelector('.burger').addEventListener('click', function(){
+            document.querySelector('.burger_menu').style.display = 'flex';
+            document.querySelector('.burger').style.display = 'none';
+            document.querySelector('.burger_close').style.display = 'block';
+        });
+        document.querySelector('.burger_close').addEventListener('click', function(){
+            document.querySelector('.burger_menu').style.display = 'none';
+            document.querySelector('.burger').style.display = 'block';
+            document.querySelector('.burger_close').style.display = 'none';
+        });
+        $('.payment_div').click( function(event){
+            let id = event.target.dataset['id'];
+            if (id === 'ya_kassa') {
+                $('.confirm_payment').text('Через Яндекс Кассу');
+            }
+            if (id === 'entity') {
+                $('.confirm_payment').text('На р/с юридического лица');
+            }
+            if (id === 'card_to_card') {
+                $('.confirm_payment').text('Перевод с карты на карту');
+            }
+
+
+        });
+        $('.ship_div').click( function(event){
+            let id = event.target.dataset['id'];
+            if (id === 'courier') {
+                $('.confirm_ship_type').text('Курьером');
+                $('.confirm_ship_type')[0].dataset['price'] = 300;
+            }
+            if (id === 'self_take') {
+                $('.confirm_ship_type').text('Самовывоз');
+                $('.confirm_ship_type')[0].dataset['price'] = 0;
+            }
+            if (id === 'trans_comp') {
+                $('.confirm_ship_type').text('Транспортной компанией');
+                $('.confirm_ship_type')[0].dataset['price'] = 0;
+            }
+            let list = localStorage.getItem('bucket');
+            if (!list) {
+                $('.no_items').css('display', 'flex');
+                $('.confirm_price').css('display', 'none');
+                if ($('#inlineRadio2')[0].checked) {
+                    $('#inlineRadio1').trigger('click');
+                }
+                $('.form-check.form-check-inline.trans_comp.radio_el.ship_div').css('display', 'none');
+            }
+            if (list){
+                let items = JSON.parse(list);
+                calculatePrice(items);
+            }
+        });
+        $('.form_name').on('input', function () {
+            if ($('.form_name').val()) {
+                $('.confirm_name').text($('.form_name').val());
+            } else {
+                $('.confirm_name').text('Ваше имя...');
+            }
+        });
+        $('.form_email').on('input', function () {
+            if ($('.form_email').val()) {
+                $('.confirm_email').text($('.form_email').val());
+            } else {
+                $('.confirm_email').text('Ваш email...');
+            }
+        });
+        $('.form_comment').on('input', function () {
+            if ($('.form_comment').val()) {
+                $('.confirm_comment').text($('.form_comment').val());
+            } else {
+                $('.confirm_comment').text('...');
+            }
+        });
+        $('.form_tel').on('input', function () {
+            if ($('.form_tel').val()) {
+                $('.confirm_phone').text($('.form_tel').val());
+            } else {
+                $('.confirm_phone').text('Ваш телефон...');
+            }
+        });
+        $('.form_addr').on('input', function () {
+            if ($('.form_addr').val()) {
+                $('.confirm_addr').text($('.form_addr').val());
+            } else {
+                $('.confirm_addr').text('...');
+            }
+        });
+        setTimeout(function(){
+            let list = localStorage.getItem('bucket');
+            if (!list) {
+                $('.no_items').css('display', 'flex');
+                $('.confirm_price').css('display', 'none');
+                if ($('#inlineRadio2')[0].checked) {
+                    $('#inlineRadio1').trigger('click');
+
+                }
+                $('.form-check.form-check-inline.trans_comp.radio_el.ship_div').css('display', 'none');
+            }
+            if (list) {
+                let items = JSON.parse(list);
+                calculatePrice(items);
+                $('.confirm_price').css('display', 'block');
+                let Html = '';
+                let finalHtml = '';
+                for (let item in items) {
+                    let item_data;
+                    if (item < 100) {
+                        item_data = items_mar.find(function (el) {if (el.id == item  ){return true}});
+                    } else if (item > 100 && item < 200) {
+                        item_data = items_cr.find(function (el) {if (el.id == item  ){return true}});
+                    } else if (item > 200) {
+                        item_data = items_color.find(function (el) {if (el.id == item  ){return true}});
+                    }
+                    Html += `<div class="item id_${item}">
+                        <span class="item_name">${item_data.title}</span>
+                        <div class="actions_item">
+                            <span class="minus" data-id="${item}"> - </span>
+                            <span class="number number_${item}"> ${items[item]} </span>
+                            <span class="plus" data-id="${item}"> + </span>
+                            <span class="delete" data-id="${item}">X</span>
+                        </div>
+                    </div>`;
+                    finalHtml += `<div class="item id_${item}">
+                        <span class="item_name">${item_data.title}</span>
+                        <div class="actions_item">
+                            <span class="number final_number_${item}">x ${items[item]} </span>
+                        </div>
+                    </div>`;
+                }
+                $('.goods_items')[0].innerHTML = Html;
+                $('.goods_items_final')[0].innerHTML = finalHtml;
+            }
+        },500);
+
+        setTimeout(function(){
+            $('.plus').click( function(event){
+                let list = localStorage.getItem('bucket');
+                if(list){
+                    localStorage.removeItem('bucket');
+                    list = JSON.parse(list);
+                    if(list[event.target.dataset.id]) {
+                        list[event.target.dataset.id] = list[event.target.dataset.id] + 1;
+                    }
+                    let el = $('.number_'+event.target.dataset.id);
+                    el.text( parseInt(el.text()) + 1);
+                    $('.final_number_'+event.target.dataset.id).text('x ' + el.text());
+                    localStorage.setItem('bucket', JSON.stringify(list));
+                    calculatePrice(list);
+                }
+            });
+            $('.minus').click( function(event){
+                let list = localStorage.getItem('bucket');
+                if(list){
+                    localStorage.removeItem('bucket');
+                    list = JSON.parse(list);
+                    let el = $('.number_'+event.target.dataset.id);
+                    if(list[event.target.dataset.id]) {
+                        list[event.target.dataset.id] = list[event.target.dataset.id] - 1;
+                    }
+                    if (el.text() - 1 > 0) {
+                        el.text(el.text() - 1);
+                        $('.final_number_'+event.target.dataset.id).text('x ' + el.text());
+                        localStorage.setItem('bucket', JSON.stringify(list));
+                    } else {
+                        delete(list[event.target.dataset.id]);
+                        $('.id_'+event.target.dataset.id).remove();
+                        if (Object.keys(list).length > 0) {
+                            localStorage.setItem('bucket', JSON.stringify(list));
+                        } else {
+                            $('.no_items').css('display', 'flex');
+                            $('.confirm_price').css('display', 'none');
+                        }
+                    }
+                    calculatePrice(list);
+                }
+            });
+            $('.delete').click( function(event){
+                let list = localStorage.getItem('bucket');
+                if(list){
+                    localStorage.removeItem('bucket');
+                    list = JSON.parse(list);
+                    delete(list[event.target.dataset.id]);
+                    $('.id_'+event.target.dataset.id).remove();
+                    if (Object.keys(list).length > 0) {
+                        localStorage.setItem('bucket', JSON.stringify(list));
+                    } else {
+                        $('.no_items').css('display', 'flex');
+                        $('.confirm_price').css('display', 'none');
+                    }
+                    calculatePrice(list);
+                }
+            });
+        }, 1500);
+    });
+    document.querySelector('.send_btn_cart').addEventListener('click', function(){
+        if (already_sent) {
+            return false;
+        }
+        let name = $('.confirm_name').text();
+        let email = $('.confirm_email').text();
+        let phone = $('.confirm_phone').text();
+        let addr = $('.confirm_addr').text();
+        let payment = $('.confirm_payment').text();
+        let comment = $('.confirm_comment').text();
+        let price = $('.confirm_price_span').text();
+        let delivery = $('.confirm_ship_type').text();
+        let items = '\n';
+        let list = JSON.parse(localStorage.getItem('bucket'));
+        for (let item in list) {
+            let item_data;
+            if (item < 100) {
+                item_data = items_mar.find(function (el) {if (el.id == item  ){return true}});
+            } else if (item > 100 && item < 200) {
+                item_data = items_cr.find(function (el) {if (el.id == item  ){return true}});
+            } else if (item > 200) {
+                item_data = items_color.find(function (el) {if (el.id == item  ){return true}});
+            }
+            items += item_data.title + ', цена за штуку: '+item_data.price + ', кол-во: ' +  list[item] + '\n';
+        }
+        $.ajax({
+            type:'POST',
+            url:'./send_request_ya.php',
+            dataType:'JSON',
+            data:{name:name, email:email, tel:phone, addr:addr, delivery: delivery,
+                payment:payment,comment:comment, price:price, items: items},
+            beforeSend: function (){
+                already_sent = true;
+            },
+            success:function(result) {
+                // console.log(result);
+                if (result.result == 'ok') {
+                    if (result.url && $('.confirm_payment').text() === 'Через Яндекс Кассу'){
+                        $('.yand_letter').css('display','block');
+                        setTimeout(function(){
+                            $('.yand_letter').css('display','none');
+                            clearValues();
+                            location.replace(result.url);
+                        },3000);
+                    } else {
+                        $('.letter').css('display','block');
+                        setTimeout(function(){
+                            $('.letter').css('display','none');
+                            clearValues();
+                        },3000);
+                    }
+                }else if (result.error) {
+                    let text = 'Во время выполнения запроса что-то пошло не так. ';
+                    if (result.error.indexOf('yandex')){
+                        text += 'Невозможно отправить оплату через Яндекс кассу. '
+                    }
+                    if (result.error.indexOf('client_communication')){
+                        text += 'Не вышло отправить письмо с реквизитами на ваш адрес. '
+                    }
+                    if (result.error.indexOf('owner_communication')){
+                        text += 'Не вышло создать заказ. '
+                    }
+                    text += 'Попробуйте снова или позвоните нам.';
+                    $('.bad_text').text(text);
+                    $('.alert_bad').css('display','block');
+                    setTimeout(function(){
+                        $('.alert_bad').css('display','none')
+                    },3000);
+                }
+                already_sent = false;
+            },
+            error:function(xhr){
+                // console.log('error', xhr.responseText);
+                $('.alert_bad').css('display','block');
+                setTimeout(function(){
+                    $('.alert_bad').css('display','none')
+                },3000);
+                already_sent = false;
+            }
+        })
+    });
+</script>
+</body>
+</html>
