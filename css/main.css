@@ -163,7 +163,10 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 /* Backgrounds */
 
 .bg-1{
-  background-image: url('../images/floor.jpg');
+  /* background-image: url('../images/floor.jpg'); */
+  background: rgb(238,174,202);
+  background: -o-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 /* Header */
@@ -272,6 +275,11 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 .info h4, #header h4{
   color: rgb(49, 30, 18);
+}
+#header h2, #header h4{
+  color: #ffffff;
+  font-family: sans-serif, montserrate;
+  font-weight: 100;
 }
 /* Contact */
 .main-links{
